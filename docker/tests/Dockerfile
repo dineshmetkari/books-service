@@ -26,4 +26,5 @@ RUN  mongod &
   sbt run &
   cd /source/client
   Xvfb :1 -screen 0 1024x768x16 &> xvfb.log  &
-  gulp watch
+  #Xvfb :1 -screen 0 1024x768x16 &> xvfb.log  &
+  #gulp watch
