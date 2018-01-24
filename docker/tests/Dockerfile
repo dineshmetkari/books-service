@@ -19,5 +19,5 @@ VOLUME ["/source", "/root/.ivy2/cache"]
 WORKDIR /source
 
 #RUN chmod +x /source/run_tests.sh
-RUN chmod +x /data/jenkins/slaves/cd/workspace/books-service/run_tests.sh
-CMD ["/source/run_tests.sh"]
+#RUN chmod +x /data/jenkins/slaves/cd/workspace/books-service/run_tests.sh
+##CMD ["/source/run_tests.sh"]
