@@ -11,12 +11,12 @@ sudo docker run -t --rm \
   vfarcic/books-service-tests
 
 # Integration Tests
-sudo docker run -t --rm \
-  -v $PWD:/source \
-  -v /data/.ivy2:/root/.ivy2/cache \
-  -e TEST_TYPE=integ \
-  -e DOMAIN=http://172.17.42.1:8080 \
-  vfarcic/books-service-tests
+#sudo docker run -t --rm \
+#  -v $PWD:/source \
+#  -v /data/.ivy2:/root/.ivy2/cache \
+#  -e TEST_TYPE=integ \
+#  -e DOMAIN=http://172.17.42.1:8080 \
+#  vfarcic/books-service-tests
   
   sudo echo 'inside \docker\test\bootstrap.sh complete'
   
