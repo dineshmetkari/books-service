@@ -3,7 +3,7 @@ MAINTAINER Viktor Farcic "viktor@farcic.com"
 
 # Packages
 RUN apt-get update && \
-    apt-get install -y --force-yes --no-install-recommends openjdk-7-jdk mongodb && \
+    apt-get install -y --force-yes --no-install-recommends openjdk-8-jdk mongodb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
