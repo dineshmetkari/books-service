@@ -17,3 +17,6 @@ sudo docker run -t --rm \
   -e TEST_TYPE=integ \
   -e DOMAIN=http://172.17.42.1:8080 \
   vfarcic/books-service-tests
+  
+  sudo echo 'inside \docker\test\bootstrap.sh complete'
+  
