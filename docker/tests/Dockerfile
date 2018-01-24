@@ -21,3 +21,9 @@ WORKDIR /source
 #RUN chmod +x /source/run_tests.sh
 #RUN chmod +x /data/jenkins/slaves/cd/workspace/books-service/run_tests.sh
 ##CMD ["/source/run_tests.sh"]
+
+RUN  mongod &
+  sbt run &
+  cd /source/client
+  Xvfb :1 -screen 0 1024x768x16 &> xvfb.log  &
+  gulp watch
