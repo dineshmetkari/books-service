@@ -14,7 +14,7 @@ RUN set -ex && \
       ca-certificates-java -y
 	  
 RUN apt-get update && \
-    apt-get install -y --force-yes --no-install-recommends openjdk-8-jdk mongodb && \
+    apt-get install -y --force-yes --no-install-recommends openjdk-8-jre-headless mongodb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
